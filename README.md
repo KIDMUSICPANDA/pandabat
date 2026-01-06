@@ -1,2 +1,2 @@
 # pandabat
-indie new wave band from Miami Florida
+Indie new wave band from Miami Florida
