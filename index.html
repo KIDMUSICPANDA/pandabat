@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANDABAT | Official</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .mono { font-family: 'Space Mono', monospace; }
+        .sun-icon {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            margin: 0 auto 2rem;
+        }
+        .joy-division-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #333, transparent);
+            width: 100%;
+            margin: 3rem 0;
+        }
+        .btn-link {
+            transition: all 0.3s ease;
+            border: 1px solid #222;
+        }
+        .btn-link:hover {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+        .lyric-scroll {
+            mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+        }
+        #countdown span {
+            display: inline-block;
+            min-width: 60px;
+        }
+        .bio-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #a1a1aa;
+        }
+        .bio-text strong {
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-start min-h-screen px-6 py-12 lg:py-24">
 
+    <!-- Header Section -->
+    <header class="w-full max-w-2xl text-center mb-12">
+        <div class="sun-icon"></div>
+        <h1 class="text-xs uppercase tracking-[0.5em] mono text-gray-500 mb-2">kidmusic 001</h1>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tighter mb-4">PANDABAT</h2>
+        <p class="text-sm uppercase tracking-widest text-gray-400">feat. SINDRI of SHANGHAI MEOW</p>
+    </header>
+
+    <!-- Countdown Timer -->
+    <div id="countdown-container" class="text-center mb-8">
+        <p class="mono text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-4">Releasing Feb 13</p>
+        <div id="countdown" class="text-2xl md:text-4xl font-light tracking-widest mono">
+            <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+    </div>
+
+    <div class="joy-division-line"></div>
+
+    <!-- Main Navigation / Links -->
+    <main class="w-full max-w-md space-y-4 mb-24">
+        <a href="#" class="btn-link block w-full py-4 px-6 text-center uppercase tracking-widest text-[10px] font-bold bg-white text-black border-white">Pre-Save Sunshine</a>
+        <a href="https://www.instagram.com/pandabatmusic" target="_blank" class="btn-link block w-full py-4 px-6 text-center uppercase tracking-widest text-[10px] font-bold">Instagram</a>
+        <a href="https://www.tiktok.com/@pandabatmusic" target="_blank" class="btn-link block w-full py-4 px-6 text-center uppercase tracking-widest text-[10px] font-bold">TikTok</a>
+        <a href="mailto:contact@kidmusic.com" class="btn-link block w-full py-4 px-6 text-center uppercase tracking-widest text-[10px] font-bold">Contact / Inquiry</a>
+    </main>
+
+    <!-- Bio Section -->
+    <section class="w-full max-w-xl mb-24">
+        <h3 class="mono text-[10px] uppercase tracking-[0.3em] text-gray-600 text-center mb-12">BIOGRAPHY / PROFILE</h3>
+        <div class="bio-text text-sm md:text-base font-light text-justify">
+            <p>
+                PandaBat is the solo project of Marthin Chan, a producer and songwriter based in <strong>Miami</strong>. Built around mood, restraint, and emotional texture, PandaBat lives in the space between post-punk and indie pop, where songs unfold slowly and atmosphere takes priority over spectacle.
+            </p>
+            <p>
+                The project explores themes of <strong>intimacy, melancholy, and emotional distance</strong>, drawing influence from the darker romanticism of <strong>Joy Division</strong> and <strong>The Cure</strong>, alongside the melodic pulse of classic alternative and new wave. Sonically, PandaBat favors minimal arrangements, steady basslines, and understated guitars—music that feels personal, unresolved, and quietly immersive.
+            </p>
+            <p>
+                While rooted in Chan’s production and songwriting, PandaBat is designed as a <strong>collaborative platform</strong>, frequently working with <strong>female vocalists and artists</strong> who bring their own emotional perspectives into each release. Rather than a single narrative voice, the project functions as a shared emotional space shaped by different energies, tones, and stories.
+            </p>
+            <p>
+                PandaBat doesn’t aim to chase trends or define conclusions. It exists as a reflective outlet—music meant to be felt rather than explained, inviting listeners to linger in emotion rather than escape it.
+            </p>
+        </div>
+    </section>
+
+    <div class="joy-division-line opacity-20"></div>
+
+    <!-- Lyrics Content Section -->
+    <section class="w-full max-w-2xl text-center mb-24">
+        <h3 class="mono text-[10px] uppercase tracking-[0.3em] text-gray-600 mb-12">SUNSHINE / LYRICS</h3>
+        <div class="lyric-scroll text-lg md:text-xl leading-relaxed font-light text-gray-300 space-y-8 italic">
+            <p>It never stops<br>The feeling is the same<br>I never quit<br>I keep on calling your name</p>
+            
+            <p class="font-bold text-white not-italic">Hey little sunshine you know you know<br>You always gonna to be mine</p>
+            
+            <p>We were so close<br>Till you broke away<br>I never quit<br>keep on calling your name</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto w-full max-w-2xl pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 pb-12">
+        <div class="text-[10px] mono text-gray-600 uppercase">
+            Written by Sandra Castillo & Marthin Chan
+        </div>
+        <div class="text-[10px] mono text-gray-600 uppercase">
+            &copy; 2026 kidmusic. all rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const countDownDate = new Date("Feb 13, 2026 00:00:00").getTime();
+
+            const timerInterval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const daysEl = document.getElementById("days");
+                const hoursEl = document.getElementById("hours");
+                const minutesEl = document.getElementById("minutes");
+                const secondsEl = document.getElementById("seconds");
+
+                if (daysEl) daysEl.innerHTML = days.toString().padStart(2, '0');
+                if (hoursEl) hoursEl.innerHTML = hours.toString().padStart(2, '0');
+                if (minutesEl) minutesEl.innerHTML = minutes.toString().padStart(2, '0');
+                if (secondsEl) secondsEl.innerHTML = seconds.toString().padStart(2, '0');
+
+                if (distance < 0) {
+                    clearInterval(timerInterval);
+                    const container = document.getElementById("countdown-container");
+                    if (container) container.innerHTML = "<p class='mono text-[10px] uppercase text-white tracking-widest'>OUT NOW</p>";
+                }
+            }, 1000);
+
+            document.body.style.opacity = '0';
+            window.onload = () => {
+                document.body.style.transition = 'opacity 1.5s ease-in';
+                document.body.style.opacity = '1';
+            };
+        })();
+    </script>
+</body>
+</html>
